@@ -1,0 +1,53 @@
+.ymodal .modal-window {
+  opacity: 0;
+  z-index: -1;
+  transform: translateY(-300px);
+}
+.ymodal .modal-overlay {
+  opacity: 0;
+  z-index: -5;
+}
+.ymodal.open .modal-overlay,
+.ymodal.open .modal-window {
+  z-index: 50;
+  opacity: 1;
+}
+.ymodal.open .modal-window {
+  transform: translateY(100px);
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+}
+.modal-window {
+  transition: 0.2s;
+  width: 600px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 5.8px 4px 9.1px rgba(0, 0, 0, 0.48);
+}
+.modal-body {
+  font-size: 1.3rem;
+}
+.modal-header {
+  border-bottom: 1px solid black !important;
+}
+.modal-footer {
+  font-size: 1.2rem;
+  border-top: 1px solid black !important;
+}
+.input-str {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.modal-close {
+  cursor: pointer;
+}
